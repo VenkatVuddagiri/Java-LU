@@ -1,0 +1,13 @@
+DAY 02 AGENDA 
+
+Data types and variable and identifier
+Access specifier
+Static
+Functions
+
+DataTypes:
+The data type specifies the size and type of values that can be stored in an identifier. Primitive—which include int, char, boolean, float, double, short, long, byte
+Access Specifier:
+
+Java provides entities called “Access Modifiers or access specifiers” that help us to restrict the scope or visibility of a package, class, constructor, methods, variables, or other data members. These access modifiers are also called “Visibility Specifiers”.
+Access Specifiers are Public, Private, Protected, Default
