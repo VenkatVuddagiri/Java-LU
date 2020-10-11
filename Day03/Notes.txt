@@ -1,0 +1,15 @@
+DAY 03 AGENDA
+
+1.System and Scanner class
+2.How to set user input
+3.Conditional statement
+4.Introduction to loop
+
+Scanner class:-
+A scanner is a class in java. util package used for obtaining the input of the primitive types like int, double, etc. To create an object of Scanner class, we usually pass the predefined object System.in, which represents the standard input stream.
+Function inside scanner are nextInt, nextFloat, nextLine, nextDouble, nextByte
+Conditional statement:-
+
+Conditional statements:-
+Java has the following conditional statements: Use if to specify a block of code to be executed, if a specified condition is true. Use else to specify a block of code to be executed if the same condition is false. Use else if to specify a new condition to test, if the first condition is false.
+Examples of Conditional statement: if, switch
