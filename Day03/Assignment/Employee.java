@@ -7,10 +7,9 @@ public class Employee {
         int monthly_salary;
         int age;
         int yearly_salary;
-        int tax;
+        double tax;
         Scanner s = new Scanner(System.in);
         System.out.println("Enter your name");
-//        s.nextLine();
         employee_name=s.next();
         System.out.println("Enter your date of birth");
         DOB=s.nextInt();
@@ -27,22 +26,23 @@ public class Employee {
         }
         yearly_salary=monthly_salary*12;
         System.out.println("Your annual salary is "+yearly_salary);
-        if(yearly_salary<=200000){
-            tax=0;
+
+        if(yearly_salary>=500000 && yearly_salary<=600000){
+            tax=(28/100.0)*yearly_salary;
         }
-        else if(yearly_salary<=300000 ){
-            tax=(5/100)*yearly_salary;
+        else if(yearly_salary>=400000 && yearly_salary<500000 ){
+            tax=(15/100.0)*yearly_salary;
         }
-        else if(yearly_salary<=400000){
-            tax=(10/100)*yearly_salary;
+        else if(yearly_salary>=300000 && yearly_salary<400000){
+            tax=(10/100.0)*yearly_salary;
         }
-        else if (yearly_salary<=500000){
-            tax=(15/100)*yearly_salary;
+        else if (yearly_salary>=200000 && yearly_salary<300000){
+            tax=(5/100.0)*yearly_salary;
         }
         else{
-            tax=(28/100)*yearly_salary;
+            tax=0;
         }
-        System.out.println("The tax amount applicable is "+tax);
+        System.out.println("The tax amount applicable is "+(int)tax);
     }
     public static int ageCalculator(int year){
         int presentYear=2020;
